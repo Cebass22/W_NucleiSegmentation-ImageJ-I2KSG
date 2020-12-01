@@ -67,7 +67,7 @@
   "description": "Segment clustered nuclei using a laplacian filter, thresholding and a binary watershed transform",
   "schema-version": "cytomine-0.1",
   "container-image": {
-    "image": "cebass22/w_nucleisegmentation-imagej-i2KSG",
+    "image": "cebass22/w_nucleisegmentation-imagej-i2ksg",
     "type": "singularity"
   }
 }
