@@ -63,8 +63,8 @@
       "command-line-flag": "--@id"
     }
   ],
-  "name": "NucleiSegmentation-ImageJ",
-  "description": "Segment clustered nuclei using a laplacian filter, thresholding and a binary watershed transform",
+  "name": "NucleiSegmentation-ImageJ-I2KSG",
+  "description": "Segment clustered nuclei using subtract background, thresholding and a binary watershed transform",
   "schema-version": "cytomine-0.1",
   "container-image": {
     "image": "sebgilbert/w_nucleisegmentation-imagej-i2ksg",
