@@ -1,5 +1,5 @@
 {
-  "command-line": "python wrapper.py CYTOMINE_HOST CYTOMINE_PUBLIC_KEY CYTOMINE_PRIVATE_KEY CYTOMINE_ID_PROJECT CYTOMINE_ID_SOFTWARE IJ_RADIUS IJ_THRESHOLD ",
+  "command-line": "python wrapper.py CYTOMINE_HOST CYTOMINE_PUBLIC_KEY CYTOMINE_PRIVATE_KEY CYTOMINE_ID_PROJECT CYTOMINE_ID_SOFTWARE IJ_RADIUS ",
   "inputs": [
     {
       "name": "Cytomine host",
@@ -52,24 +52,13 @@
       "command-line-flag": "--@id"
     },
     {
-      "default-value": 5,
+      "default-value": 50,
       "name": "Radius",
-      "description": "Radius for Laplacian filter",
+      "description": "Radius for Subtract Background",
       "set-by-server": false,
       "value-key": "@ID",
       "optional": true,
       "id": "ij_radius",
-      "type": "Number",
-      "command-line-flag": "--@id"
-    },
-    {
-      "default-value": -0.5,
-      "name": "Threshold",
-      "description": "Segmentation threshold",
-      "set-by-server": false,
-      "value-key": "@ID",
-      "optional": true,
-      "id": "ij_threshold",
       "type": "Number",
       "command-line-flag": "--@id"
     }
@@ -78,7 +67,7 @@
   "description": "Segment clustered nuclei using a laplacian filter, thresholding and a binary watershed transform",
   "schema-version": "cytomine-0.1",
   "container-image": {
-    "image": "neubiaswg5/w_nucleisegmentation-imagej",
+    "image": "neubiaswg5/w_nucleisegmentation-imagej-i2KSG",
     "type": "singularity"
   }
 }
