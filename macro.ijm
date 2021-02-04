@@ -1,6 +1,4 @@
 // Author: Sebastian Gilbert (University of Birmingham)
-// modified by Volker Bäcker to make it run
-// in batch mode, reading parameters from the command line
 //
 // Overview: The macro will pre-process, segment and post-process nuclei images, all to be exported to BIAFLOWS.
 // Use a similar command line to this,
@@ -52,7 +50,6 @@ for(i=0; i<images.length; i++) {
 		// Post-processings
 			run("Despeckle"); // Denoise any single pixel elements
 			run("Fill Holes"); // Fill holes
-			// Watershed: Use topography of original image to watershed
 			run("Watershed"); // Watershed
 
 		// Analyze
